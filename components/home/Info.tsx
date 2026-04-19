@@ -73,7 +73,7 @@ const Info = (props:InfoProps) => {
                         <img src="assets/img/sublime.jpg" alt="Sublime Cafe" className="w-full h-96 rounded-lg"/>
                         <div className="flex flex-col items-center gap-2 p-2">
                             Discover our passion for coffee
-                            <Button onClick={() => setModal("story")} type="button" bg="bg-[#a2784f]" color="text-white">Get Directions</Button>
+                            <Button onClick={() => setModal("story")} type="button" bg="bg-[#a2784f]" color="text-white">View more</Button>
                         </div>
                     </Card>
                 </div>
@@ -96,7 +96,7 @@ const Info = (props:InfoProps) => {
                         <img src="assets/img/ambiance.jpg" alt="Ambiance" className="w-full h-96 rounded-lg"/>
                         <div className="flex flex-col items-center gap-2 p-2">
                             Find us and enjoy the ambiance
-                            <Button onClick={() => setModal("ambiance")} type="button" bg="bg-[#a2784f]" color="text-white">View more</Button>
+                            <Button onClick={() => setModal("ambiance")} type="button" bg="bg-[#a2784f]" color="text-white">Check us out</Button>
                         </div>
                     </Card>
                 </div>
