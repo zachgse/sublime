@@ -26,7 +26,7 @@ const Info = (props:InfoProps) => {
             {modal && (
                 <Backdrop isOpen={modal != null} class={clsx(modal == "ambiance" 
                                                                     ? "w-4/5 h-11/12"
-                                                                    : "lg:w-2/5 md:w-2/5 w-4/5 justify-start items-start")} 
+                                                                    : "lg:w-2/5 md:w-2/5 w-4/5 lg:h-fit h-4/5 justify-start items-start")} 
                     onCancel={()=>setModal(null)}>
                     {modal == "ambiance" ? (
                     <div className="grid grid-cols-3 grid-rows-3 w-full h-full overflow-y-auto">

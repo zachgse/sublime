@@ -16,7 +16,7 @@ const Backdrop = (props:BackdropProps) => {
         <>
             <div className="fixed inset-0 bg-black opacity-70 z-10"></div>
             <div className="fixed inset-0 flex justify-center items-center z-20" onClick={props.onCancel}>
-                <div onClick={(e) => e.stopPropagation()}className={clsx("bg-white shadow-lg rounded-lg flex flex-col gap-4 p-6 relative",
+                <div onClick={(e) => e.stopPropagation()}className={clsx("bg-white shadow-lg rounded-lg flex flex-col gap-4 p-6 relative overflow-y-auto",
                     props.class ?? "lg:w-1/5 md:w-2/5 w-4/5 items-center justify-center text-center"
                 )}> 
                     {props.children}
