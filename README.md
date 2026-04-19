@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+☕ Sublime Coffee CMS
 
-## Getting Started
+A modern, dynamic coffee shop website and content management system built for Sublime Coffee, powered by Next.js and Supabase.
 
-First, run the development server:
+This project serves both a public-facing website and an internal CMS for managing content like stories, menus, gallery images, and featured products.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🚀 Tech Stack
+Frontend: Next.js (App Router)
+Backend: Supabase
+Database
+Authentication
+Storage (S3-like file storage)
+Styling: Tailwind CSS + utility libraries
+Rich Text Editor: Tiptap
+UI Components: Radix UI, shadcn-style components
+State & UX Enhancements:
+react-hot-toast (notifications)
+react-hotkeys-hook (keyboard shortcuts)
+react-loader-spinner (loading states)
+Icons:
+Lucide React
+Remixicon
+FontAwesome
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✨ Features
+🔐 Authentication (CRM Access)
+Secure login/logout via Supabase Auth
+Protected CMS routes
+Session handling integrated with Next.js SSR
+📝 Story Management
+Rich text editor powered by Tiptap
+Create and update coffee shop stories
+Supports:
+Headings
+Paragraphs
+Lists
+Underline
+Text styles
+📋 Menu Management
+Upload restaurant menu files (PDF/images)
+Stored in Supabase Storage (S3-like bucket)
+Replace or update menu anytime
+File preview before upload
+🖼️ Gallery System
+Upload up to 6 images max
+Create and delete images dynamically
+Preview before upload using local state management
+Optimized storage via Supabase
+⭐ Featured Products
+Manage up to 3 featured products
+Create, update, and delete products
+Image uploads with preview support
+Designed for highlighting signature coffee items
+📦 File Upload System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+All media uploads (menu, gallery, products):
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Use Supabase Storage (S3-like)
+Include real-time file previews via React state
+Validate limits before upload (e.g., 6 images max for gallery)
+Optimized for fast UX and minimal refetching
+🧠 CMS Overview
 
-## Learn More
+The CMS is designed for simplicity and speed:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Centralized dashboard for managing content
+Real-time updates via Supabase
+Minimal reload interactions
+Structured for non-technical users (barista/staff-friendly)
