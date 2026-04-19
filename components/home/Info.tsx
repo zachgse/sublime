@@ -29,7 +29,7 @@ const Info = (props:InfoProps) => {
                                                                     : "lg:w-2/5 md:w-2/5 w-4/5 lg:h-fit h-4/5 justify-start items-start")} 
                     onCancel={()=>setModal(null)}>
                     {modal == "ambiance" ? (
-                    <div className="grid grid-cols-3 grid-rows-3 w-full h-full overflow-y-auto">
+                    <div className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-3 w-full h-full">
                         <div>
                             <div className="w-full h-full">
                                 <img src={props.gallery[0].url} alt="01" className="w-full h-full"/>
@@ -40,12 +40,12 @@ const Info = (props:InfoProps) => {
                                 <img src={props.gallery[5].url} alt="02" className="w-full h-full"/>
                             </div>
                         </div>
-                        <div className="row-span-2">
+                        <div className="md:row-span-2 row-span-1">
                             <div className="w-full h-full">
                                 <img src={props.gallery[2].url} alt="03" className="w-full h-full"/>
                             </div>
                         </div>
-                        <div className="row-span-2">
+                        <div className="md:row-span-2 row-span-1">
                             <div className="w-full h-full">
                                 <img src={props.gallery[3].url} alt="04" className="w-full h-full"/>
                             </div>
@@ -55,7 +55,7 @@ const Info = (props:InfoProps) => {
                                 <img src={props.gallery[4].url} alt="05" className="w-full h-full"/>
                             </div>
                         </div>
-                        <div className="col-start-2 col-span-2">
+                        <div className="md:col-start-2 md:col-span-2 col-span-1">
                             <div className="w-full h-full">
                                 <img src={props.gallery[1].url} alt="06" className="w-full h-full"/>
                             </div>
