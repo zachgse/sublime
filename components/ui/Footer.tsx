@@ -4,7 +4,8 @@ import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-
 
 export const Footer = () => {
     return (
-        <div className="w-full py-16 bg-linear-to-r from-[#34241c] to-[#261b13] text-[#ebded6] relative">
+        <div className="w-full py-16 bg-linear-to-r 
+        from-[#34241c] to-[#261b13] text-[#ebded6] relative">
             <div className="px-4 lg:px-40 flex w-full gap-12">
                 <div className="md:w-2/3 w-1/2 md:border-r border-[#ebded6] flex flex-col gap-2 px-4">
                     <div className="flex w-full items-center gap-2">
@@ -31,13 +32,13 @@ export const Footer = () => {
                     <p>Follow us on</p>
                     <div className="flex flex-wrap gap-3">
                         <a href="https://www.facebook.com/profile.php?id=61576246773112" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faFacebook} className='md:w-12 md:h-12 h-6 w-6'/>
+                            <FontAwesomeIcon icon={faFacebook} className='md:w-8 md:h-8 h-6 w-6'/>
                         </a>
                         <a href="https://www.instagram.com/sublimecafeph/" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faInstagram} className='md:w-12 md:h-12 h-6 w-6'/>
+                            <FontAwesomeIcon icon={faInstagram} className='md:w-8 md:h-8 h-6 w-6'/>
                         </a>
                         <a href="https://www.tiktok.com/@sublimecafe" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faTiktok} className='md:w-12 md:h-12 h-6 w-6'/>
+                            <FontAwesomeIcon icon={faTiktok} className='md:w-8 md:h-8 h-6 w-6'/>
                         </a>
                     </div>
                 </div>

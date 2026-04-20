@@ -16,7 +16,7 @@ type InfoProps = {
     gallery: GalleryImage[]
 }
 
-type Modal = "story" | "ambiance" | null
+type Modal = "story"| "menu" | "ambiance" | null
 
 const Info = (props:InfoProps) => {
     const [modal,setModal] = React.useState<Modal>(null);
@@ -24,11 +24,11 @@ const Info = (props:InfoProps) => {
     return (
         <>
             {modal && (
-                <Backdrop isOpen={modal != null} class={clsx(modal == "ambiance" 
+                <Backdrop isOpen={modal != null} class={clsx(modal == "ambiance" || modal == "menu"
                                                                     ? "w-4/5 h-11/12 !p-0"
                                                                     : "lg:w-2/5 md:w-2/5 w-4/5 lg:h-fit h-4/5 justify-start items-start")} 
                     onCancel={()=>setModal(null)}>
-                    {modal == "ambiance" ? (
+                    {modal == "ambiance" && (
                     <div className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-3 w-full h-full">
                         <div>
                             <div className="w-full h-full">
@@ -61,7 +61,13 @@ const Info = (props:InfoProps) => {
                             </div>
                         </div>
                     </div>
-                    ) : (
+                    )}
+                    {modal == "menu" && (
+                        <div className="w-full h-full">
+                            <img src={props.menu?.url ?? ""} alt="Menu preview" className="w-full h-full"/>
+                        </div>
+                    )}
+                    {modal == "story" && (
                         <div dangerouslySetInnerHTML={{ __html: props.story?.content ?? "" }} />
                     )}
                 </Backdrop>
@@ -83,10 +89,7 @@ const Info = (props:InfoProps) => {
                         <img src="assets/img/menuprev.jpg" alt="Coffee preview" className="w-full lg:h-80 h-60 object-cover rounded-lg"/>
                         <div className="flex flex-col items-center gap-2 p-4">
                             Unique blends & handcrafted drinks
-                            <a href={props.menu?.url ?? ""} target="_blank"
-                                className="w-fit h-10 px-12 rounded-lg flex items-center gap-1 cursor-pointer hover:opacity-75 bg-[#a2784f] text-white">
-                                Check Menu
-                            </a>
+                            <Button onClick={() => setModal("menu")} type="button" bg="bg-[#715646]" color="text-white">Check menu</Button>
                         </div>
                     </Card>
                 </div>
