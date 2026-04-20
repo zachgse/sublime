@@ -66,9 +66,9 @@ const Info = (props:InfoProps) => {
                     )}
                 </Backdrop>
             )}
-            <div className="flex lg:flex-row lg:flex-wrap md:flex-col items-center justify-center gap-6 w-full px-4 lg:px-40">
-                <div className="w-full md:w-1/3 flex flex-col gap-2">
-                    <p className="md:text-center text-secondary text-xl font-[600] underline">Our Story</p>
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-6 w-full px-4 lg:px-40">
+                <div className="w-full lg:w-1/3 flex flex-col gap-2">
+                    <p className="text-secondary text-xl font-[600] underline">Our Story</p>
                     <Card>
                         <img src="assets/img/sublime.jpg" alt="Sublime Cafe" className="w-full h-96 rounded-lg"/>
                         <div className="flex flex-col items-center gap-2 p-2">
@@ -77,8 +77,8 @@ const Info = (props:InfoProps) => {
                         </div>
                     </Card>
                 </div>
-                <div className="w-full md:w-1/3 flex flex-col gap-2">
-                    <p className="md:text-center text-primary text-xl font-[600] underline">Specialty Brews</p>
+                <div className="w-full lg:w-1/3 flex flex-col gap-2">
+                    <p className="text-primary text-xl font-[600] underline">Specialty Brews</p>
                     <Card>
                         <img src="assets/img/menuprev.jpg" alt="Coffee preview" className="w-full h-96 rounded-lg"/>
                         <div className="flex flex-col items-center gap-2 p-2">
@@ -90,8 +90,8 @@ const Info = (props:InfoProps) => {
                         </div>
                     </Card>
                 </div>
-                <div className="w-full md:w-1/3 flex flex-col gap-2">
-                    <p className="md:text-center text-secondary text-xl font-[600] underline">Visit Us</p>
+                <div className="w-full lg:w-1/3 flex flex-col gap-2">
+                    <p className="text-secondary text-xl font-[600] underline">Visit Us</p>
                     <Card>
                         <img src="assets/img/ambiance.jpg" alt="Ambiance" className="w-full h-96 rounded-lg"/>
                         <div className="flex flex-col items-center gap-2 p-2">
