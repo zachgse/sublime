@@ -20,9 +20,9 @@ export const Footer = () => {
                         sublimecafeph@gmail.com
                     </div>                 
                 </div>
-                <div className="w-1/3  flex flex-col gap-2 px-4">
+                <div className="w-1/3 flex flex-col gap-2 px-4">
                     <p>Follow us on</p>
-                    <div className="flex gap-3">
+                    <div className="flex flex-wrap gap-3">
                         <a href="https://www.facebook.com/profile.php?id=61576246773112" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faFacebook} className='w-6'/>
                         </a>
