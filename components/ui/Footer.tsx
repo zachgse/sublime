@@ -31,13 +31,13 @@ export const Footer = () => {
                     <p>Follow us on</p>
                     <div className="flex flex-wrap gap-3">
                         <a href="https://www.facebook.com/profile.php?id=61576246773112" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faFacebook} className='md:w-8 md:h-8 h-4 w-4'/>
+                            <FontAwesomeIcon icon={faFacebook} className='md:w-12 md:h-12 h-8 w-8'/>
                         </a>
                         <a href="https://www.instagram.com/sublimecafeph/" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faInstagram} className='md:w-8 md:h-8 h-4 w-4'/>
+                            <FontAwesomeIcon icon={faInstagram} className='md:w-12 md:h-12 h-8 w-8'/>
                         </a>
                         <a href="https://www.tiktok.com/@sublimecafe" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faTiktok} className='md:w-8 md:h-8 h-4 w-4'/>
+                            <FontAwesomeIcon icon={faTiktok} className='md:w-12 md:h-12 h-8 w-8'/>
                         </a>
                     </div>
                 </div>
